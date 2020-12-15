@@ -1,0 +1,6 @@
+flask
+pandas
+gensim
+nltk
+prometheus_client
+pyemd
