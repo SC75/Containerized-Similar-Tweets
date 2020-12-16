@@ -2,7 +2,6 @@ pipeline {
   agent any
   stages {
     stage('Flask App: Build, Run, Test') {
-      parallel {
         stage('Build') {
           steps {
             sh 'sudo docker-compose rm'
@@ -52,5 +51,5 @@ pipeline {
       }
     }
   }
-}
+
 
