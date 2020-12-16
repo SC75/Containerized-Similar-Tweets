@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage('Build and Run Flask app') {
           steps {
-            sh 'sudo docker-compose up'
+            sh 'sudo docker-compose build'
           }
         }
 
