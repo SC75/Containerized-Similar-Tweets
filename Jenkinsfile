@@ -1,7 +1,6 @@
 pipeline {
   agent any
   stages {
-    stage('Flask App: Build, Run, Test') {
         stage('Build') {
           steps {
             sh 'sudo docker-compose rm'
@@ -32,7 +31,6 @@ pipeline {
                 echo "In release branch."
               }
             }
-
           }
         }
 
@@ -44,12 +42,11 @@ pipeline {
                 sh 'sudo docker-compose down'
               }
             }
-
           }
         }
 
       }
     }
-  }
+  
 
 
