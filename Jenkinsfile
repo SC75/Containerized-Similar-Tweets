@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Building, Running, Testing Flask app') {
+    stage('Flask App: Build, Run, Test') {
       parallel {
-        stage('Build and Running Flask app') {
+        stage('Build and Run Flask app') {
           steps {
             sh 'sudo docker-compose up'
           }
@@ -17,11 +17,13 @@ pipeline {
                 echo "In feature branch. Unit tests incoming !"
                 sh 'python test_app.py'
                 echo "Pushing into develop branch !"
-              }else if(env.BRANCH_NAME == 'develop'){
+              }
+              else if(env.BRANCH_NAME == 'develop'){
                 echo "In develop branch. Stress tests incoming !"
                 sh 'python stress_test_app.py'
                 echo "Push into release branch !"
-              }else if(env.BRANCH_NAME == 'release'){
+              }
+              else if(env.BRANCH_NAME == 'release'){
                 echo "In release branch."
               }
             }
@@ -29,7 +31,7 @@ pipeline {
           }
         }
 
-        stage('Docker images down') {
+        stage('Down Docker images') {
           steps {
             sleep 100
             script {
