@@ -3,9 +3,14 @@ pipeline {
   stages {
     stage('Flask App: Build, Run, Test') {
       parallel {
-        stage('Build and Run Flask app') {
+        stage('Build') {
           steps {
-            sh 'sudo docker-compose up --build'
+            sh 'sudo docker-compose build'
+          }
+          
+          stage('Run') {
+          steps {
+            sh 'sudo docker-compose up -d'
           }
         }
 
