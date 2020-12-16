@@ -1,16 +1,15 @@
 def build_app(){
   echo 'start docker image'
-  bat 'docker-compose up -d'
+  sh 'docker-compose up -d'
 }
 
 def stress_test_app(){
   echo 'stress test'
-  bat 'C:/Users/Daija/AppData/Local/Programs/Python/Python39/python.exe stress_test_app.py'
-}
+  sh 'python stress_test_app.py'
 
 def down_app(){
   echo 'down image'
-  bat 'docker-compose down'
+  sh 'docker-compose down'
 }
 
 def release_app(){
