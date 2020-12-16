@@ -36,7 +36,7 @@ pipeline {
           }
         }
 
-        stage('Down Docker images') {
+        stage('Remove Docker images') {
           steps {
             sleep 100
             script {
