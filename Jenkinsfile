@@ -7,7 +7,7 @@ pipeline {
           steps {
             sh 'sudo docker-compose rm'
             sh 'sudo docker-compose build'
-          }
+          }}
           
           stage('Run') {
           steps {
@@ -53,4 +53,4 @@ pipeline {
     }
   }
 }
-}
+
