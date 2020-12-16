@@ -13,7 +13,7 @@ class FlaskTests(unittest.TestCase):
 
     def test_index(self):
         n = 1000
-        resonses_urls = []
+        responses_urls = []
 
         for i in range(n):
             responses_urls.append(requests.get('http://localhost:5000'))
