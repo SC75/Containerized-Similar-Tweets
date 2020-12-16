@@ -10,6 +10,7 @@ After cloning this repository, type this command:
     docker-compose up
 
 A docker container will be created and the web app will be available on localhost port 5000.
+
 Unit testing:
 
     python unit_tests.py
