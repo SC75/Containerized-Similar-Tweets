@@ -5,6 +5,7 @@ pipeline {
       parallel {
         stage('Build') {
           steps {
+            sh 'sudo docker-compose rm'
             sh 'sudo docker-compose build'
           }
           
