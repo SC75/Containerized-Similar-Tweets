@@ -15,7 +15,7 @@ Unit testing:
 
     python unit_tests.py
 
-Sress testing: 
+Stress testing: 
 
     python stress_tests.py
 
