@@ -1,5 +1,7 @@
 # Containerized-Similar-Tweets
 
+![alt text](https://zupimages.net/up/20/51/fnpx.png)
+
 This is a dockerized flask web application using NLP. 
 
 The user can submit a word to a form. The web app will return the top 20 most similar presidential tweets.
