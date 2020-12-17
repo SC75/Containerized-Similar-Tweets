@@ -4,8 +4,6 @@
 
 Picture provided by Khodor Hammoud 
 
-Link to trello: https://trello.com/b/USyzkPx4/data-engineering-ii-pj2
-
 This is a dockerized flask web application using NLP. 
 
 The user can submit a word to a form. The web app will return the top 20 most similar presidential tweets.
