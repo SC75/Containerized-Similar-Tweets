@@ -1,6 +1,7 @@
 # Containerized-Similar-Tweets
 
 ![alt text](https://zupimages.net/up/20/51/fnpx.png)
+By Khodor Hammoud 
 
 This is a dockerized flask web application using NLP. 
 
